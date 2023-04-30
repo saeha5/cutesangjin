@@ -3,9 +3,9 @@
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_five@.2.0/UhBeeRami.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-    }
+}
 
-   
+
 * {
     font-family: 'UhBeeRami';
     margin: 0;
@@ -34,17 +34,19 @@ ul {
 
 #logo {
     float: left;
-    width: 250px;
+
+    width: 300px;
     height: 100px;
     line-height: 100px;
     padding-left: 20px;
 }
 
+
 nav {
     float: right;
     width: 900px;
     height: 100px;
-    padding-top: 40px;
+    padding-top: 20px;
 }
 
 #topMenu {
@@ -99,22 +101,24 @@ nav {
     font-weight: bolder;
 }
 
-.topbutton{
-display: block;
-position: relative;
-float: left;
-width: 50px;
-padding: 0;
-margin: 10px 20px 20px 20px;
-text-align: center;
-line-height: 50px;
-border-radius: 5px;
-transition: all 0.2s ;
-background-color:  #E6E6E6;
+.topbutton {
+    display: block;
+    position: relative;
+    float: left;
+    width: 50px;
+    padding: 0;
+    margin: 10px 20px 20px 20px;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 5px;
+    transition: all 0.2s;
+    background-color: #E6E6E6;
 }
-.topbutton:hover{
+
+.topbutton:hover {
     background: #757575;
 }
+
 #links ul li a p {
     margin-top: 15px;
     font-weight: 600;
