@@ -3,8 +3,8 @@
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_five@.2.0/UhBeeRami.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-    }
-  
+}
+
 * {
     font-family: 'UhBeeRami';
     margin: 0;
@@ -99,22 +99,24 @@ nav {
     font-weight: bolder;
 }
 
-.topbutton{
-display: block;
-position: relative;
-float: left;
-width: 50px;
-padding: 0;
-margin: 10px 20px 20px 20px;
-text-align: center;
-line-height: 50px;
-border-radius: 5px;
-transition: all 0.2s ;
-background-color:  #E6E6E6;
+.topbutton {
+    display: block;
+    position: relative;
+    float: left;
+    width: 50px;
+    padding: 0;
+    margin: 10px 20px 20px 20px;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 5px;
+    transition: all 0.2s;
+    background-color: #E6E6E6;
 }
-.topbutton:hover{
+
+.topbutton:hover {
     background: #757575;
 }
+
 #links ul li a p {
     margin-top: 15px;
     font-weight: 600;
@@ -158,21 +160,23 @@ footer li {
     margin-top: 25px;
     margin-left: 20px;
 }
+
 /* <지훈> */
 p {
     font-size: 14px;
     color: #757575;
 }
-.choice{
+
+.choice {
     border: 1px solid black;
     border-radius: 5px;
     width: 900px;
-    height: 300px;
+    /* height: 300px; */
     margin: 5px auto;
 }
 
 
-aside{
+aside {
     float: left;
     position: sticky;
     top: 100px;
@@ -182,40 +186,47 @@ aside{
     padding: 5px;
     width: 130px;
 }
-aside ul li{
+
+aside ul li {
     padding: 5px;
     list-style: inside;
 }
-aside ul li:hover{
+
+aside ul li:hover {
     font-weight: bold;
 }
-.mainTop{
+
+.mainTop {
     /* position: relative; */
     background-color: #E6E6E6;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     width: 898px;
-    height: 25px;
+
 }
-.mainTop>input{
-    display:none;
+
+.mainTop>input {
+    display: none;
 }
-i[class="bi bi-plus-circle"]{
+
+i[class="bi bi-plus-circle"] {
     float: right;
     width: 25px;
     height: 25px;
     margin-right: 10px;
     text-align: center;
 }
-#creatChoice{
+
+#creatChoice {
     float: right;
     width: 25px;
     height: 25px;
     margin-right: 10px;
     text-align: center;
 }
-#addChoice{
-    position: relative;
+
+#addChoice {
+    /* position: relative; */
     top: 30px;
     margin: 0 auto;
     margin-bottom: 10px;
@@ -226,27 +237,33 @@ i[class="bi bi-plus-circle"]{
     padding: 10px;
     display: none;
 }
-#creatChoice:checked ~ #addChoice{
+
+#creatChoice:checked~#addChoice {
     display: block;
 }
-.align{
+
+.align {
     width: 430px;
     margin: 0 auto;
 }
-#addChoice p{
+
+#addChoice p {
     display: inline-block;
     /* margin-left: 5px; */
     margin-right: 0;
     padding: 5px;
     width: 60px;
 }
-.addChoiceText{
+
+.addChoiceText {
     width: 100px;
 }
-.choiceSub{
+
+.choiceSub {
     width: 310px;
 }
-#startChoice{
+
+#startChoice {
     float: right;
     border: 1px solid black;
     border-radius: 5px;
@@ -256,12 +273,14 @@ i[class="bi bi-plus-circle"]{
     white-space: normal;
     font-weight: bold;
 }
-#startChoice:active{
+
+#startChoice:active {
     background-color: black;
     color: white;
 }
-.choiceList{
-    position: relative;
+
+.choiceList {
+    /* position: relative; */
     top: 30px;
     padding: 10px;
     margin: 0 auto;
@@ -271,22 +290,27 @@ i[class="bi bi-plus-circle"]{
     border: 1px solid black;
     border-radius: 5px;
 }
-.choiceResult{
+
+.choiceResult {
     width: 700px;
     margin: 0 auto;
 }
-.prcnt{
+
+.prcnt {
     display: inline-block;
-    position: relative;
-    background: linear-gradient(to right, rgb(117, 211, 255)38%,rgb(255, 133, 117) 38%);
+    /* position: relative; */
+    background: linear-gradient(to right, rgb(117, 211, 255)38%, rgb(255, 133, 117) 38%);
     border-radius: 5px;
     width: 500px;
     height: 30px;
 }
-.ch1, .ch2{
+
+.ch1,
+.ch2 {
     display: inline-block;
     width: 60px;
     margin: 5px;
     font-weight: bold;
 }
+
 /* </지훈> */

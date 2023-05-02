@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hide on 404 - 투표방</title>
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 
 </head>
@@ -39,50 +39,51 @@
                     <a href="#" class="topbutton">마이</a>
             </nav>
         </header>
-       <aside>      <!-- Side Bar - 투표페이지 -->     
+        <aside> <!-- Side Bar - 투표페이지 -->
             <ul>
                 <li><a href="">골라줘</a></li>
                 <li><a href="">해줘</a></li>
             </ul>
         </aside>
-        <div class="choice">        <!-- 투표방 Main form -->
+        <div class="choice"> <!-- 투표방 Main form -->
             <div class="mainTop">
-                <input type="checkbox" id="creatChoice" class="bi bi-plus-circle" name="creatChoice">       <!-- 투표글 작성창 생성용 체크박스 -->
-                <label for="creatChoice"><i class="bi bi-plus-circle"></i></label>                          <!-- 투표글 작성창 생성용 아이콘 -->
-                <div id="addChoice">        <!-- 투표글 작성창 -->
+                <input type="checkbox" id="creatChoice" class="bi bi-plus-circle" name="creatChoice">
+                <!-- 투표글 작성창 생성용 체크박스 -->
+                <label for="creatChoice"><i class="bi bi-plus-circle"></i></label> <!-- 투표글 작성창 생성용 아이콘 -->
+                <div id="addChoice"> <!-- 투표글 작성창 -->
                     <div class="align">
                         <p>골라줘 :</p><input type="text" name="choiceSub" id="choiceSub" maxlength="30"
                             placeholder="30자 제한">
                         <input type="submit" name="startChoice" id="startChoice" value="Choice Strat!"
-                            onclick="uploadChoice()"><br>       <!-- 작성정보 전송 -->
+                            onclick="uploadChoice()"><br> <!-- 작성정보 전송 -->
                         <p>청코너 :</p><input type="text" name="choice_1" id="choice_1" class="addChoiceText">
                         <p style="margin-left: 45px;">홍코너 :</p><input type="text" name="choice_2" id="choice_2"
                             class="addChoiceText">
                     </div>
                 </div>
-                <div class="choiceList">        <!-- 게시된 투표글 목록 -->
-                    <h3>choiceSub 내용 삽입</h3><br>
-                    <div class="choiceResult">
-                        <p class="ch1">choice_1 내용 삽입</p>
-                        <div class="prcnt"></div>
-                        <p class="ch2">choice_2 내용 삽입</p>
-                    </div>
+            </div>
+            <div class="choiceList"> <!-- 게시된 투표글 목록 -->
+                <h3>choiceSub 내용 삽입</h3><br>
+                <div class="choiceResult">
+                    <p class="ch1">choice_1 내용 삽입</p>
+                    <div class="prcnt"></div>
+                    <p class="ch2">choice_2 내용 삽입</p>
                 </div>
-                <div class="choiceList">
-                    <h3>choiceSub 내용 삽입</h3><br>
-                    <div class="choiceResult">
-                        <p class="ch1">choice_1 내용 삽입</p>
-                        <div class="prcnt"></div>
-                        <p class="ch2">choice_2 내용 삽입</p>
-                    </div>
+            </div>
+            <div class="choiceList">
+                <h3>choiceSub 내용 삽입</h3><br>
+                <div class="choiceResult">
+                    <p class="ch1">choice_1 내용 삽입</p>
+                    <div class="prcnt"></div>
+                    <p class="ch2">choice_2 내용 삽입</p>
                 </div>
-                <div class="choiceList">
-                    <h3>choiceSub 내용 삽입</h3><br>
-                    <div class="choiceResult">
-                        <p class="ch1">choice_1 내용 삽입</p>
-                        <div class="prcnt"></div>
-                        <p class="ch2">choice_2 내용 삽입</p>
-                    </div>
+            </div>
+            <div class="choiceList">
+                <h3>choiceSub 내용 삽입</h3><br>
+                <div class="choiceResult">
+                    <p class="ch1">choice_1 내용 삽입</p>
+                    <div class="prcnt"></div>
+                    <p class="ch2">choice_2 내용 삽입</p>
                 </div>
             </div>
         </div>
