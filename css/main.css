@@ -158,15 +158,29 @@ footer li {
     margin-top: 25px;
     margin-left: 20px;
 }
-
+/* <지훈> */
 p {
     font-size: 14px;
     color: #757575;
 }
+<<<<<<< HEAD
+<<<<<<< HEAD
+.choice{
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 900px;
+    height: 300px;
+=======
+=======
+>>>>>>> main
 #choice{
     border: 1px solid black;
     border-radius: 5px;
 
+<<<<<<< HEAD
+>>>>>>> main
+=======
+>>>>>>> main
     margin: 5px auto;
 }
 
@@ -207,7 +221,15 @@ i[class="bi bi-plus-circle"]{
     text-align: center;
 }
 #creatChoice{
+<<<<<<< HEAD
+<<<<<<< HEAD
+    float: right;
+=======
     /* float: right; */
+>>>>>>> main
+=======
+    /* float: right; */
+>>>>>>> main
     width: 25px;
     height: 25px;
     margin-right: 10px;
@@ -241,11 +263,25 @@ i[class="bi bi-plus-circle"]{
 .addChoiceText{
     width: 100px;
 }
+<<<<<<< HEAD
+<<<<<<< HEAD
+.choiceSub{
+    width: 310px;
+}
+#startChoice{
+    float: right;
+=======
+=======
+>>>>>>> main
 #choiceSub{
     width: 310px;
 }
 #startChoice{
     /* float: right; */
+<<<<<<< HEAD
+>>>>>>> main
+=======
+>>>>>>> main
     border: 1px solid black;
     border-radius: 5px;
     width: 50px;
@@ -261,8 +297,19 @@ i[class="bi bi-plus-circle"]{
 .choiceList{
     position: relative;
     top: 40px;
+<<<<<<< HEAD
+<<<<<<< HEAD
+    /* right: 10px; */
+    padding: 10px;
+    margin:  0 auto;
+=======
     padding: 10px;
     margin:  auto;
+>>>>>>> main
+=======
+    padding: 10px;
+    margin:  auto;
+>>>>>>> main
     width: 800px;
     height: 150px;
     border: 1px solid black;
@@ -280,4 +327,13 @@ i[class="bi bi-plus-circle"]{
     display: inline-block;
     width: 60px;
     font-weight: bold;
+<<<<<<< HEAD
+<<<<<<< HEAD
 }
+/* </지훈> */
+=======
+}
+>>>>>>> main
+=======
+}
+>>>>>>> main
