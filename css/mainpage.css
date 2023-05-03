@@ -17,19 +17,20 @@
      float: left;
  }
 
- .button1 {
+ .button {
      width: 100%;
      height: 40px;
      border: none;
      background-color: #E6E6E6;
  }
 
- .button1 button {
+ .button button {
+    padding-right: 15PX;
+    font-size: 23PX;
      float: right;
      border: none;
-     background-color: #E6E6E6;
+     background-color: transparent;
  }
-
 
  #prev {
      left: 0;
@@ -59,13 +60,6 @@
      opacity: 0.5;
  }
 
- /* button:hover {
-    background-color: #222;
-    color: #fff;
-    opacity: 0.6;
-    cursor: pointer;
-} */
-
  button:focus {
      outline: 0;
  }
@@ -73,8 +67,7 @@
  /* 404 커뮤니티 */
 
  .board_title {
-     margin-top: 10px;
-     margin-bottom: 10px;
+     margin: 15px;
  }
 
  .board_title strong {
@@ -130,10 +123,13 @@
 
  .board_write_wrap {
      height: 500px;
-     display: none;
      border-bottom: 2px solid #000;
  }
 
+ .hide {
+    display: none;
+  }
+  
  .board_write {
      border-top: 2px solid #000;
 

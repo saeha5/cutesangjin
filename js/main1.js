@@ -24,17 +24,18 @@ function nextSlide() {
     showSlides(current);
 }
 
-function showWrite() {
-    var x = document.getElementById("showWrite")
-    var y = document.getElementById("pm")
 
-    if (x.style.display == "none") {
-        y.src = "images/minus.png"
-        x.style.display = "block"
-    } else {
-        x.style.display = "none"
-        y.src = "images/plus.png"
-    }
-
-}
-
+window.addEventListener('DOMContentLoaded', () => {
+    const buttons = document.querySelectorAll('.button button');
+    const writeWraps = document.querySelectorAll('.board_write_wrap');
+    buttons.forEach((button, index) => {
+        button.addEventListener('click', () => {
+            writeWraps[index].classList.toggle('hide');
+            if (button.textContent === '+') {
+                button.textContent = '-';
+            } else {
+                button.textContent = '+';
+            }
+        });
+    });
+});
