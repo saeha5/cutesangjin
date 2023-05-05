@@ -15,7 +15,7 @@
 }
 
 #container {
-    border: 1px solid black;
+    /* border: 1px solid black; */
     margin: 0 auto;
     width: 1200px;
 }
@@ -171,7 +171,6 @@ footer li {
     margin-left: 20px;
 }
 
-/* <지훈> */
 p {
     font-size: 14px;
     color: #757575;
