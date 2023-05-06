@@ -1,3 +1,12 @@
+/* 소제목 */
+.board_title {
+    margin: 15px;
+    margin-left: 65px;
+}
+
+.board_title strong {
+    font-size: 20px;
+}
 /* 투표글 전체 */
 .board_wrap {
     /* border: 1px solid black; */
@@ -135,7 +144,7 @@ i[class="bi bi-plus-circle"] {
     width: 800px;
     height: 250px;
     /* border: 1px solid black; */
-    background-color: rgb(255, 247, 236);
+    background-color: rgb(255, 253, 250);
     border-radius: 5px;
     box-shadow: 0 0 5px gray;
 }
@@ -171,7 +180,9 @@ i[class="bi bi-plus-circle"] {
     height: 20px;
     margin-left: 80px;
     top: 50%;
-    margin-top: -11px;
+    margin-top: -15px;
+    font-weight: bold;
+    font-size: large;
 }
 
 /* .ch1{
@@ -200,8 +211,8 @@ i[class="bi bi-plus-circle"] {
 
 #icon_del{
     float: right;
-    width: 30px;
-    height: 30px;    
+    width: 50px;
+    height: 50px;    
 }
 .icon_boom1{
     /* transform: translate(30%, -25%); */
