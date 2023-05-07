@@ -22,6 +22,26 @@
   <link rel="stylesheet" href="css/mainpage.css">
   <link rel="icon"
     href='data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><text y=".9em" font-size="90">👀</text></svg>'>
+  <style>
+    a:hover {
+      text-decoration: none;
+    }
+
+    h1 {
+      display: block;
+      font-size: 2em;
+      margin-block-start: 0.67em;
+      margin-block-end: 0.67em;
+      margin-inline-start: 0px;
+      margin-inline-end: 0px;
+      font-weight: bold;
+    }
+
+    img {
+    vertical-align: unset;
+    border-style: unset;
+    }
+  </style>
 </head>
 
 <body>
@@ -62,7 +82,7 @@
 
 
               <button style="height: 100%; width: 100%; font-size: 30px;" data-toggle="modal"
-              href="#registerModal">+</button>
+                href="#registerModal">+</button>
 
 
 
@@ -261,32 +281,32 @@
   <script src="js/resize_height.js"></script>
 
   <script>
-		$(document).ready(
-				function() {
-					$(function() {
-						$('input[name="daterange"]').daterangepicker(
-								{
-									"startDate" : new Date(),
-									"endDate" : new Date(),
-									opens : 'center',
-									locale : {
-										format : "YYYY년 M월 D일",
-										"separator" : " ~ ",
-										"applyLabel" : "적용",
-										"cancelLabel" : "취소",
-										"fromLabel" : "시작일",
-										"toLabel" : "종료일",
-										"customRangeLabel" : "직접선택",
-										"daysOfWeek" : [ "일", "월", "화", "수",
-												"목", "금", "토" ],
-										"monthNames" : [ "1월", "2월", "3월",
-												"4월", "5월", "6월", "7월", "8월",
-												"9월", "10월", "11월", "12월" ],
-									}
-								});
-					});
-				});
-	</script>
+    $(document).ready(
+      function () {
+        $(function () {
+          $('input[name="daterange"]').daterangepicker(
+            {
+              "startDate": new Date(),
+              "endDate": new Date(),
+              opens: 'center',
+              locale: {
+                format: "YYYY년 M월 D일",
+                "separator": " ~ ",
+                "applyLabel": "적용",
+                "cancelLabel": "취소",
+                "fromLabel": "시작일",
+                "toLabel": "종료일",
+                "customRangeLabel": "직접선택",
+                "daysOfWeek": ["일", "월", "화", "수",
+                  "목", "금", "토"],
+                "monthNames": ["1월", "2월", "3월",
+                  "4월", "5월", "6월", "7월", "8월",
+                  "9월", "10월", "11월", "12월"],
+              }
+            });
+        });
+      });
+  </script>
 
 </body>
 
