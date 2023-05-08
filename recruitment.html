@@ -23,7 +23,7 @@
   <link rel="icon"
     href='data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><text y=".9em" font-size="90">👀</text></svg>'>
   <style>
-    a{
+    a {
       color: unset;
     }
 
@@ -43,8 +43,12 @@
     }
 
     img {
-    vertical-align: unset;
-    border-style: unset;
+      vertical-align: unset;
+      border-style: unset;
+    }
+
+    .form-control {
+      height: calc(1.5em + 0.75rem + 10px);
     }
   </style>
 </head>
@@ -207,70 +211,58 @@
 
 
   <div class="modal fade" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="modal" aria-hidden="true">
-
     <div class="modal-dialog">
-
       <div class="modal-content">
-
         <div class="modal-header">
-
           <h5 class="modal-title" id="modal">모집 등록</h5>
-
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-
             <span aria-hidden="true">&times;</span>
-
           </button>
-
         </div>
-
         <div class="modal-body">
-
           <form action="./evaluationRegisterAction.jsp" method="post" autocomplete="off">
-
             <div class="form-group">
-
-              <label>모집 제목</label> <input type="text" name="evaluationTitle" class="form-control" maxlength="20">
-
+              <label>모집 제목</label>
+              <input type="text" name="evaluationTitle" class="form-control" maxlength="20">
             </div>
-
-
-            <div class="form-group">
-
-
-              <label>모집 기한</label> <input class="form-control text-center" type="text" name="daterange"
-                value="0000-00-00 - 0000-00-00" readonly />
-
-
+            <div class="form-group row">
+              <div class="col-md-7" style="padding-right: 5px;">
+                <label>모집 기한</label>
+                <input class="form-control text-center" type="text" name="daterange" value="0000-00-00 - 0000-00-00"
+                  readonly />
+              </div>
+              <div class="col-md-4" style="padding-left: 5px;">
+                <label>모집인원</label>
+                <select class="form-control" name="recruitmentCount">
+                  <option value="">선택</option>
+                  <option value="2">2명</option>
+                  <option value="3">3명</option>
+                  <option value="4">4명</option>
+                  <option value="5">5명</option>
+                  <option value="6">6명</option>
+                  <option value="7">7명</option>
+                  <option value="8">8명</option>
+                  <option value="9">9명</option>
+                  <option value="10">10명</option>
+                  <option value="직접입력">직접입력</option>
+                </select>
+              </div>
             </div>
-
             <div class="form-group">
-
               <label>내용</label>
-
               <textarea type="text" name="evaluationContent" class="form-control" maxlength="2048"
                 style="height: 180px;"></textarea>
-
             </div>
-
-
             <div class="modal-footer">
-
               <button type="button" class="btn btn-secondary" data-dismiss="modal">취소</button>
-
               <button type="submit" class="btn btn-primary">등록하기</button>
-
             </div>
-
           </form>
-
         </div>
-
       </div>
-
     </div>
-
   </div>
+
 
 
 
@@ -287,7 +279,7 @@
               opens: 'center',
               locale: {
                 format: "YYYY년 M월 D일",
-                "separator": " ~ ",
+                "separator": "~",
                 "applyLabel": "적용",
                 "cancelLabel": "취소",
                 "fromLabel": "시작일",
@@ -302,7 +294,42 @@
             });
         });
       });
+
+    // $(document).ready(function () {
+    //   $('select[name="recruitmentCount"]').change(function () {
+    //     if ($(this).val() == "직접입력") {
+    //       $(this).css('width', '10%');
+    //       $(this).after('<input type="text" name="recruitmentCountInput" class="form-control" placeholder="인원수를 입력하세요" style="width: 70%;">');
+    //     } else {
+    //       $(this).css('width', '100%');
+    //       $('input[name="recruitmentCountInput"]').remove();
+    //     }
+    //   });
+    // });
+
+    $(document).ready(function () {
+      $('select[name="recruitmentCount"]').change(function () {
+        if ($(this).val() == "직접입력") {
+          $(this).css('width', '10%');
+          $(this).parent().addClass('col-md-2');
+          $(this).parent().removeClass('col-md-4');
+          $(this).parent().css('padding-right','0px');
+          $(this).parent().parent().append('<div class="col-md-3" style="padding-left: 0px; padding-right: 10px;"><label>&nbsp;</label><input type="text" name="recruitmentCountInput" class="form-control" placeholder="인원수를 입력하세요" style="width: 100%;"></div>');
+        } else {
+          $(this).css('width', '100%');
+          $(this).parent().addClass('col-md-4');
+          $(this).parent().removeClass('col-md-2');
+          $(this).parent().css('padding-right','15px');
+          $('input[name="recruitmentCountInput"]').parent().remove();
+        }
+      });
+    });
+
+
+
   </script>
+
+
 
 </body>
 
