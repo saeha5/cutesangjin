@@ -72,6 +72,23 @@
 			<artifactId>spring-security-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+		<dependency>
+       <groupId>org.apache.tomcat.embed</groupId>
+       <artifactId>tomcat-embed-jasper</artifactId>
+        </dependency>
+        
+       <dependency>
+    <groupId>javax.servlet</groupId>
+    <artifactId>jstl</artifactId>
+    <version>1.2</version>
+</dependency>
+
+        <!-- Connection Pool -->
+      <dependency>
+         <groupId>org.apache.commons</groupId>
+         <artifactId>commons-dbcp2</artifactId>
+         <version>2.9.0</version>
+      </dependency>  
 	</dependencies>
 
 	<build>
@@ -126,5 +143,8 @@
 			</releases>
 		</pluginRepository>
 	</pluginRepositories>
+
+
+
 
 </project>
