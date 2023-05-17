@@ -31,6 +31,7 @@
 
                     <a href="#" class="topbutton">채팅</a>
                     <a href="#" class="topbutton">마이</a>
+                </ul>
             </nav>
         </header>
 
