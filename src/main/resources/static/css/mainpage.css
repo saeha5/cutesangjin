@@ -88,7 +88,6 @@
  }
 
  .board_list>div>div {
-     display: inline-block;
      padding: 15px 0;
      text-align: center;
      font-size: 16px;
@@ -98,7 +97,10 @@
      font-weight: 600;
  }
 
+
+
  .board_list .title {
+     padding-left: 5%;
      width: 60%;
      text-align: left;
  }
@@ -199,12 +201,9 @@
      display: block;
      position: relative;
      float: right;
-     width: 50px;
      text-align: center;
-     line-height: 50px;
      border-radius: 5px;
      transition: all 0.2s;
-     background-color: #E6E6E6;
      margin: 10px;
 
  }
@@ -215,4 +214,17 @@
 
  .contenthide{
      height: 200px;
+ }
+
+
+ /* Post */
+ .post {
+     display: flex;
+     align-items: center;
+     cursor: pointer;
+     padding: 10px;
+ }
+
+ .post:hover {
+     background-color: #f2f2f2;
  }

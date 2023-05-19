@@ -1,25 +1,27 @@
 package com.hideon.myapp.main_share.Entity;
 
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
+import lombok.*;
+import org.hibernate.annotations.ColumnDefault;
+import org.hibernate.annotations.CreationTimestamp;
+import org.springframework.data.annotation.CreatedBy;
+import org.springframework.data.annotation.LastModifiedDate;
+import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
+import java.sql.Timestamp;
 import java.util.Date;
 
 @Entity
 @Builder
 @Table(name = "posts")
 @Getter
+@Setter
 @NoArgsConstructor
 @AllArgsConstructor
-
+@EntityListeners(AuditingEntityListener.class)
 public class MSEntity {
     @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer num;
     @Column(unique = true , nullable = true)
     private String user_id;
@@ -30,7 +32,9 @@ public class MSEntity {
     @Column
     private Integer view_count;
     @Column
-    private Date created_at;
+    private String created_at;
     @Column
-    private Date updated_at;
+    private String updated_at;
+    @Column
+    private Integer sort;
 }

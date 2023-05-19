@@ -3,13 +3,17 @@ package com.hideon.myapp.main_share.service.impl;
 import com.hideon.myapp.main_share.Entity.MSEntity;
 
 import java.util.List;
-import java.util.Optional;
 
 public interface MSService {
 
     List<MSEntity> getAllItem();
 
-    Optional<MSEntity> getItemById(Integer num);
+    MSEntity createPost(String title, String content, int sort);
 
-    String deleteUserById(Integer num);
+//    String createPosts(MSEntity msEntity);
+
+    String deletePostById(Integer num);
+
+    MSEntity updatePost(MSEntity msEntity, Integer num);
+
 }

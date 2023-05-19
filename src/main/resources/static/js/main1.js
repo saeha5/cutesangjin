@@ -48,4 +48,31 @@ function hide2() {
     } else {
         element.style.display = 'none';
     }
+
+    // const modal = document.getElementById("modal-${status.count}");
+    // const editTitleButton = document.getElementById("edit-title");
+    // const titleInput = document.getElementById("modal-title");
+    // console.log("-------------------------------------");
+    // editTitleButton.addEventListener("click", () => {
+    //     titleInput.style.display = "block";
+    //     titleInput.focus();
+    //     titleInput.value = modal.querySelector(".modal-title").textContent;
+    //     modal.querySelector(".modal-title").style.display = "none";
+    // });
+    // console.log("-------------------------------------");
+    // titleInput.addEventListener("blur", () => {
+    //     modal.querySelector(".modal-title").textContent = titleInput.value;
+    //     modal.querySelector(".modal-title").style.display = "block";
+    // });
 }
+
+function hideupdate() {
+    console.log("-------------------------------------");
+    var element = document.querySelector('.myDiv');
+    if (element.style.display === 'none') {
+        element.style.display = 'block';
+    } else {
+        element.style.display = 'none';
+    }
+}
+

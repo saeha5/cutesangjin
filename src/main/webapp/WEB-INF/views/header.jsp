@@ -5,13 +5,17 @@
 
 <head>
     <title>Document</title>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    </head>
 </head>
 
 <body>
         <header>
             <div id="logo">
                 <a href="main">
-                    <h1><img src="images/mainicon.png" style="width: 50px; padding: 5px;">Hide on <span
+                    <h1><img src="/resources/images/mainicon.png" style="width: 50px; padding: 5px;">Hide on <span
                             class="text-rainbow">404</span></h1>
                 </a>
             </div>
